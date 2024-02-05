@@ -15,7 +15,7 @@ class Program
             Console.WriteLine("4. Load the journal from a file");
             Console.WriteLine("5. Exit");
             
-            Console.Write("Choose an option (1-5): ");
+            Console.Write("What would you like to do? ");
             string choice = Console.ReadLine();
             
             switch (choice)
@@ -53,12 +53,23 @@ class Program
         Console.Write("Response: ");
         string response = Console.ReadLine();
 
-        Entry entry = new Entry
-        {
-            Prompt = prompt,
-            Response = response,
-            Date = DateTime.Now
-        };
+        Console.Write("Do you want to include something you are thankful for today? (y/n): ");
+        string includeGratitude = Console.ReadLine();
+
+         string gratitude = string.Empty;
+        if (includeGratitude.ToLower() == "y")
+            {
+            Console.Write("What are you thankful for today? ");
+            gratitude = Console.ReadLine();
+            }
+
+    Entry entry = new Entry
+    {
+        Prompt = prompt,
+        Response = response,
+        Date = DateTime.Now,
+        Gratitude = gratitude
+    };
 
         journal.AddEntry(entry);
 
