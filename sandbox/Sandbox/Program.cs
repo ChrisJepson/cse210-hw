@@ -4,7 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Sandbox World!");
+        BaldEagle joey =  new BaldEagle("Joey", "Screee");
+        BaldEagle dragon = new BaldEagle("Dragon", "Rawr");
+
+        joey.MakeSound();
+        dragon.MakeSound();
     }
 }
 
