@@ -1,5 +1,3 @@
-// Renter.cs
-
 public class Renter
 {
     private int id;

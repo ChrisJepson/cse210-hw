@@ -1,5 +1,3 @@
-// Vehicle.cs
-
 public abstract class Vehicle
 {
     private string model;

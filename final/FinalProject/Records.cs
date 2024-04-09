@@ -1,4 +1,3 @@
-// Records class for saving rental details to a file
 public class Records
 {
     public void SaveRentalRecord(string record)

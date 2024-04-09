@@ -1,5 +1,3 @@
-// Car.cs
-
 public class Car : Vehicle
 {
     private int numSeats;

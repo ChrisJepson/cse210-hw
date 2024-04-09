@@ -1,5 +1,3 @@
-// Truck.cs
-
 public class Truck : Vehicle
 {
     private float cargoCapacity;

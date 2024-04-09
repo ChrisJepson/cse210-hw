@@ -1,5 +1,3 @@
-// Motorcycle.cs
-
 public class Motorcycle : Vehicle
 {
     private int engineSize;
